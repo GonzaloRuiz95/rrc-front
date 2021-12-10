@@ -1,0 +1,73 @@
+body{
+  font-weight: 600;
+}
+
+.question-text, .accordion-body__contents, .accordion-body__contents p{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
+}
+
+.accordion__item.js-accordion-item{
+  border-color: white;
+}
+
+/* Barra de navegacion */
+.topnav {
+    overflow: hidden;
+    width: 100%;
+    background-color: #0f0f11;
+  }
+  
+.topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  .topnav a:hover {
+    background-color: transparent;
+  }
+  
+  .topnav a.active {
+    color: white;
+  }
+  
+  .topnav .icon {
+    display: none;
+  }
+
+  .topnav {
+      display: none;
+  }
+
+  @media screen and (max-width: 600px) {
+    .topnav { display: block; }
+    .topnav a:not(:first-child) {display: none;}
+    .topnav a.icon {
+      float: right;
+      display: block;
+    }
+  }
+  
+  @media screen and (max-width: 600px) {
+    .topnav { display: block; }
+    .topnav.responsive {position: relative;}
+    .topnav.responsive .icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .topnav.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+      transition: display 0s, opacity 0.5s linear;
+    }
+  }
+
+
+
